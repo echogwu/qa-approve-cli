@@ -4,7 +4,8 @@ import subprocess
 ADDRESS_CITY_MAP = {
     "SFO": "185 Berry St, San Francisco, CA 94107",
     "SEA": "400 Broad St, Seattle, WA 98109",
-    "LAS": "770 Las Vegas Blvd N, Las Vegas, NV 89101"
+    "LAS": "770 Las Vegas Blvd N, Las Vegas, NV 89101",
+    "AUS": "919 E 32nd St, Austin, TX 78705",
 }
 
 
@@ -52,6 +53,16 @@ def qa_approve_batch(phone_numbers: List[Tuple]):
 
 
 if __name__ == "__main__":
-    # add all phone numbers you need to qa approve below
-    driver_phone_numbers = [("4105559585", "LAS"), ("4385556843", "SFO")]
+    # add all phone numbers you need to qa approve below. The phone numbers below are for earnings team UI automation
+    driver_phone_numbers = [
+        ("4135553178", "SFO"),
+        ("4185552882", "AUS"),
+        ("4235557832", "AUS"),
+        ("4105559030", "AUS"),
+        ("4075556855", "SFO"),
+        ("4385559316", "SFO"),
+        ("4195551878", "AUS"),
+        ("4435552084", "SFO")
+     ]
+
     qa_approve_batch(driver_phone_numbers)
