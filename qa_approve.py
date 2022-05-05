@@ -53,5 +53,5 @@ def qa_approve_batch(phone_numbers: List[Tuple]):
 
 if __name__ == "__main__":
     # add all phone numbers you need to qa approve below
-    driver_phone_numbers = [("4105559585", "LAS"), ("4385556843", "SFO")] 
+    driver_phone_numbers = [("4105559585", "LAS"), ("4385556843", "SFO")]
     qa_approve_batch(driver_phone_numbers)
